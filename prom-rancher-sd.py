@@ -85,6 +85,6 @@ def write_config_file(filename,get_config_function):
 if __name__ == '__main__':
     while True:
         time.sleep(5)
-        write_config_file(outputFolder + '/rancher.json',get_monitoring_config)
-        write_config_file(outputFolder + '/node_exporter.json',get_node_monitoring_config)
+        write_config_file('{0}/rancher.json'.format(outputFolder),get_monitoring_config)
+        write_config_file('{0}/node_exporter.json'.format(outputFolder),get_node_monitoring_config)
 
